@@ -1,0 +1,70 @@
+{
+  "base_url": "https://hrms.reckon.com.hk/en/Account/LogOn",
+  "driver_path": "~/Documents/chromedriver/",
+
+  "credentials": {
+    "username": "Username Here",
+    "company_domain": "prenetics",
+    "password": "Password Here"
+  },
+
+  "settings": {
+    "no_of_days": 30,
+    "month": "jun",
+    "start_row": 1,
+    "start_col": 1
+  },
+
+  "blockUI_elements": {
+    "blockUI": "/html/body/div[2]",
+    "blockUIPage": "/html/body/div[4]",
+    "cssSelector": "body > div.blockUI.blockOverlay",
+    "iframeSelector": "#formpostDialog > iframe"
+  },
+
+  "login": {
+    "username_input": "/html/body/div[1]/div/div[4]/form/fieldset/div[2]/input",
+    "company_domain_input": "/html/body/div[1]/div/div[4]/form/fieldset/div[3]/input",
+    "password_input": "/html/body/div[1]/div/div[4]/form/fieldset/div[4]/input",
+    "submit_btn": "/html/body/div[1]/div/div[4]/form/fieldset/div[5]/input"
+  },
+
+  "dashboard": {
+    "security_tab": "/html/body/div[1]/div[1]/div[2]/div[2]/ul/li[9]",
+    "audit_log_btn": "/html/body/div[1]/div[1]/div[3]/div/div/ul/li"
+  },
+
+  "audit_log_page": {
+    "fromDate_input": "/html/body/div[1]/div[2]/div/div[2]/div[2]/div/fieldset/div/table/tbody/tr[1]/td[5]/div[1]/input",
+    "options_dropdown": {
+      "dropdown": "/html/body/div[1]/div[2]/div/div[2]/div[2]/div/fieldset/div/table/tbody/tr[2]/td[5]/div/button",
+      "deselect_all": "/html/body/div[12]/div/ul/li[2]/a",
+      "option_1": "/html/body/div[12]/ul/li[1]",
+      "option_2": "/html/body/div[12]/ul/li[2]/label",
+      "option_3": "/html/body/div[12]/ul/li[9]",
+      "option_4": "/html/body/div[12]/ul/li[10]"
+    },
+    "search_btn": "/html/body/div[1]/div[2]/div/div[2]/div[2]/div/fieldset/div/table/tbody/tr[1]/td[11]/input",
+    "generate_btn": "/html/body/div[1]/div[2]/div/div[2]/div[2]/div/fieldset/div/table/tbody/tr[2]/td[7]/input",
+    "no_record_btn": "body > div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div > button"
+  },
+
+  "calendar": {
+    "visibility_check": "/html/body/div[3]",
+    "month": {
+      "dropdown": "/html/body/div[3]/div[1]/div/select[1]",
+      "jan": "/html/body/div[3]/div[1]/div/select[1]/option[1]",
+      "feb": "/html/body/div[3]/div[1]/div/select[1]/option[2]",
+      "mar": "/html/body/div[3]/div[1]/div/select[1]/option[3]",
+      "apr": "/html/body/div[3]/div[1]/div/select[1]/option[4]",
+      "may": "/html/body/div[3]/div[1]/div/select[1]/option[5]",
+      "jun": "/html/body/div[3]/div[1]/div/select[1]/option[6]",
+      "jul": "/html/body/div[3]/div[1]/div/select[1]/option[7]",
+      "aug": "/html/body/div[3]/div[1]/div/select[1]/option[8]",
+      "sep": "/html/body/div[3]/div[1]/div/select[1]/option[9]",
+      "oct": "/html/body/div[3]/div[1]/div/select[1]/option[10]",
+      "nov": "/html/body/div[3]/div[1]/div/select[1]/option[11]",
+      "dev": "/html/body/div[3]/div[1]/div/select[1]/option[12]"
+    }
+  }
+}
