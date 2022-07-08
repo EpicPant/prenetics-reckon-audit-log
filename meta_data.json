@@ -3,16 +3,16 @@
   "driver_path": "~/Documents/chromedriver/",
 
   "credentials": {
-    "username": "Username Here",
+    "username": "",
     "company_domain": "prenetics",
-    "password": "Password Here"
+    "password": ""
   },
 
   "settings": {
     "no_of_days": 30,
-    "month": "jun",
     "start_row": 1,
-    "start_col": 1
+    "start_col": 1,
+    "month": "jun"
   },
 
   "blockUI_elements": {
