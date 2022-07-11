@@ -26,7 +26,7 @@ Fill in your username & password for Reckon and the starting position of the cal
 
 ## Screenshots
 
-![Screenshot for meta_data.json](./src//screenshot.PNG)
+![Screenshot for meta_data.json](https://raw.github.com/EpicPant/prenetics-reckon-audit-log/main/screenshot.png)
 
 ## Author
 
