@@ -1,7 +1,3 @@
 build/
 dist/
-
-./main.spec
-./flow
-./test.py
-./chromedriver.exe
+src/*
