@@ -29,9 +29,8 @@ driver.get(base_url)
 wait = WebDriverWait(driver, 30)
 
 # Extract JSON meta data
-
-try:
-    f = open("./meta_data.json", "wr")
+if os.path.exists('meta_data.json'):
+    f = open("./meta_data.json", "r")
 
     meta_data = json.load(f)
 
@@ -146,5 +145,5 @@ try:
                 print("No Records Moving Forward")
 
             print(f'Done {i + 1}')
-except:
+else:
     driver.close()

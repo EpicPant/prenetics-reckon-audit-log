@@ -9,9 +9,9 @@
   },
 
   "settings": {
-    "no_of_days": 30,
+    "no_of_days": 10,
     "start_row": 1,
-    "start_col": 1,
+    "start_col": 4,
     "month": "jun"
   },
 
