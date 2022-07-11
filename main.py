@@ -144,5 +144,3 @@ else:
             print("No Records Moving Forward")
 
         print(f'Done {i + 1}')
-
-    driver.close()

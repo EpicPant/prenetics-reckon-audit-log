@@ -15,7 +15,7 @@ selenium
 ## Build sript
 
 ```sh
-pyinstaller ./main.py --onefile --noconsole --add-binary "./src/chromedriver.exe;./driver"
+pipenv run python setup.py py2exe
 ```
 
 ## Usage
