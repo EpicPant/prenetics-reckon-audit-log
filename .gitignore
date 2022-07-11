@@ -1,8 +1,7 @@
-chromedriver.exe
-
 build/
 dist/
 
-flow
-
-test.py
+./main.spec
+./flow
+./test.py
+./chromedriver.exe
