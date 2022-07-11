@@ -15,7 +15,15 @@ selenium
 ## Build sript
 
 ```sh
-pyinstaller ./main.py
+pipenv install
+```
+
+```sh
+pipenv shell
+```
+
+```sh
+pyinstaller -F -c --key=secret_keys ./main.py
 ```
 
 ## Usage
