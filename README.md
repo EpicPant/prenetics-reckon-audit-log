@@ -11,6 +11,18 @@
 npm install
 ```
 
+## Prerequisite
+
+Python 3.10
+pyinstaller
+selenium
+
+## Build sript
+
+```sh
+pyinstaller ./main.py --onefile --noconsole --add-binary "./src/chromedriver.exe;./driver"
+```
+
 ## Usage
 
 Download the .exe file in the release channel\
