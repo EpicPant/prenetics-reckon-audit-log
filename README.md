@@ -15,7 +15,7 @@ selenium
 ## Build sript
 
 ```sh
-pipenv run python setup.py py2exe
+pyinstaller ./main.py
 ```
 
 ## Usage
