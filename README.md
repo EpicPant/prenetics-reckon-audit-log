@@ -13,8 +13,8 @@ npm install
 
 ## Usage
 
-Download the .exe file in the release channel
-Make sure the meta_data.json is in the same directory as the .exe file
+Download the .exe file in the release channel\
+Make sure the meta_data.json is in the same directory as the .exe file\
 Fill in your username & password for Reckon and the starting position of the calendar
 
 ## Author
