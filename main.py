@@ -5,31 +5,21 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 
-import sys
 import os
 import json
 
-def resource_path(relative_path):
-    try:
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.dirname(__file__)
-    return os.path.join(base_path, relative_path)
-
-# driver = webdriver.Chrome(resource_path('./driver/chromedriver.exe'))
-
-driver = webdriver.Chrome(ChromeDriverManager().install())
-
-# chrome_driver_path = "./chromedriver"
-# driver = webdriver.Chrome(chrome_driver_path)
-
-base_url = "https://hrms.reckon.com.hk/en/Account/LogOn"
-
-driver.get(base_url)
-wait = WebDriverWait(driver, 30)
-
-# Extract JSON meta data
 if os.path.exists('meta_data.json'):
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+
+    base_url = "https://hrms.reckon.com.hk/en/Account/LogOn"
+
+    driver.get(base_url)
+    wait = WebDriverWait(driver, 30)
+
+    # Set window size
+    driver.set_window_size(1400, 900)
+
+    # Extract JSON meta data
     f = open("./meta_data.json", "r")
 
     meta_data = json.load(f)
@@ -145,5 +135,3 @@ if os.path.exists('meta_data.json'):
                 print("No Records Moving Forward")
 
             print(f'Done {i + 1}')
-else:
-    driver.close()
