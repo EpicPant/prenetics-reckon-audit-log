@@ -31,7 +31,7 @@ Fill in your username & password for Reckon and the starting position of the cal
 
 ## Screenshots
 
-![Alt text]()
+![Screenshot for meta_data.json](./src//screenshot.PNG)
 
 ## Author
 
