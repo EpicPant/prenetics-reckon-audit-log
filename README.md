@@ -5,15 +5,10 @@
 
 > A simple bot designed to automatically download Audit Log from Reckon.
 
-## Install
-
-```sh
-npm install
-```
-
 ## Prerequisite
 
 Python 3.10
+pipenv
 pyinstaller
 selenium
 
