@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 selenium = "*"
 webdriver-manager = "*"
+py2exe = "*"
 
 [dev-packages]
 
